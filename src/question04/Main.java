@@ -55,7 +55,7 @@ public class Main {
                     }
 
                     if(!umaViva) {
-                        parar = true;
+                        parar = false;
                         System.out.println("\nTODAS AS THREADS REALIZARAM SEUS RESPECTIVOS CALCULOS!");
                     } else {
                         throw new Exception("AINDA TEM UMA THREAD VIVA");
