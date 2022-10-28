@@ -31,6 +31,7 @@ public class Main {
             System.out.println("\n### SELECIONE QUAL FUNÇÃO VOCÊ DESEJA REALIZAR ###");
             System.out.println("\n[A] - Exibir a soma dos números pares do intervalo a partir das somas do subintervalos");
             System.out.println("[B] - Verificar se há threads ativas");
+            System.out.println("[C] - Encerrar o programa");
 
             char escolha = input.nextLine().charAt(0);
 
@@ -39,7 +40,7 @@ public class Main {
                 case 'A', 'a':
                     System.out.println("Qual thread você deseja exibir?");
                     int opcao = input.nextInt();
-                    System.out.println(threads[opcao]);
+                    System.out.println(threads[opcao-1]);
                     input.nextLine();
                     break;
 
@@ -61,7 +62,7 @@ public class Main {
                     }
                     break;
                 case 'C', 'c':
-
+                    parar = true;
             }
         }while (!parar);
 
